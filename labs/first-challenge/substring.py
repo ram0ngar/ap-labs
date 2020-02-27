@@ -1,4 +1,5 @@
-word=str(raw_input("Input: "))
+import sys
+word=sys.argv[1]
 max=0
 for x in range(0,len(word)):
     characters=[]
