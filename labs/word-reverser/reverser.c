@@ -32,18 +32,10 @@ int main()
         printf("\n");
         }
     else{
-        //printf("%c",c);
-        //printf("%i",nc);
         word[nc]=c;
         nc++;
 
     }
-	/*if (c == ' ' || c == '\n' || c == '\t')
-	    state = OUT;
-	else if (state == OUT) {
-	    state = IN;
-	    ++nw;
-	}*/
     }
 
     printf("Lines: %d,  Words: %d, Chars: %d\n", nl, nw, nc);
