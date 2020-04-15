@@ -26,6 +26,11 @@ General instructions
 - Don't forget to handle errors properly.
 - Coding best practices implementation will be also considered.
 
+Execute
+=======
+-Execute MAKEFILE
+-Execute testLogger executable
+
 How to submit your work
 =======================
 ```
