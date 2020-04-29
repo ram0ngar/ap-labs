@@ -6,6 +6,8 @@ import (
 	"log"
 	"net"
 	"time"
+	"flag"
+	"fmt"
 )
 
 func handleConn(c net.Conn) {
@@ -20,7 +22,12 @@ func handleConn(c net.Conn) {
 }
 
 func main() {
-	listener, err := net.Listen("tcp", "localhost:9090")
+	port:=flag.String("port","8000","Server port")
+	flag.Parse()
+	var host string
+	host = "localhost:" + *port
+	fmt.Println("Server initialized in "+host)
+	listener, err := net.Listen("tcp", host)
 	if err != nil {
 		log.Fatal(err)
 	}
