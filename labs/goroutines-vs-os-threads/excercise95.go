@@ -6,6 +6,7 @@ import(
 	"fmt"
 	"strconv"
 )
+
 var contador int
 func main(){
 	contador=0
